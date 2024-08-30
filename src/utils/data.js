@@ -3,20 +3,20 @@ import { CiMobile1 } from "react-icons/ci";
 import { MdWorkspacesOutline } from "react-icons/md";
 export const projectExperience = [
   {
-    name: "Website Design",
-    projects: 76,
+    name: "Website Development",
+    projects: "50+",
     icon: HiOutlineDesktopComputer,
     bg: "#286F6C",
   },
   {
-    name: "Mobile App Design",
-    projects: 63,
+    name: "Backend development",
+    projects: "30+",
     icon: CiMobile1,
     bg: "#EEC048",
   },
   {
-    name: "Brand Identity",
-    projects: 47,
+    name: "requirement design",
+    projects: "200+",
     icon: MdWorkspacesOutline,
     bg: "#F26440",
   },
@@ -29,25 +29,25 @@ export const WhatDoIHelp = [
 
 export const workExp = [
   {
-    place: "Self-Employed, Brisbane",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Visual Designer",
+    place: "Xi'an YTO Information Technology Co., Ltd",
+    tenure: "July 2018 - January 2020",
+    role: "Backend development",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+      "Engaged in Java development, using springboot for REST API development, and developed customer service management systems and express supply chain systems for the logistics industry",
   },
   {
-    place: "New Man Services",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "UI/UX Designer",
+    place: "Xi'an Huawei Research Institute",
+    tenure: "January 2020 - Aug 2021",
+    role: "Front-end Development",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+      "Develop customer service system on operator BG, analyze user usage data for statistical reports and large screen displays, and provide real-time support to customer service personnel through intelligent fault analysis",
   },
   {
-    place: "Global Solution",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Sr. Product Designer",
+    place: "Xi'an Xinhuasan Technology Co., Ltd",
+    tenure: "Aug 2021 - Aug 2024",
+    role: "Full stack development",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+      "Using JavaScript, Vue, React, NestJS for front-end and partial back-end development of virtualized desktops, managing strategies, users, and integrating with CMCC for public cloud desktop development",
   },
 ];
 
