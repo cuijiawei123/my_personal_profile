@@ -2,8 +2,10 @@ import React from 'react'
 import css from './Hero.module.scss'
 import {fadeIn, slideIn, staggerContainer} from '../../utils/motion'
 import {motion} from 'framer-motion'
+import { useTranslation } from 'react-i18next';
 
 const hero = () => {
+  const { t } = useTranslation();
   return (
     <section className={`paddings ${css.wrapper}`}>
         <motion.div 
@@ -13,11 +15,11 @@ const hero = () => {
             variants={staggerContainer} 
             className={`innerWidth ${css.container}`}> 
             <div className={` ${css.upperElements}`}>
-                <motion.span className="primaryText" variants={fadeIn("right","tween",0.2,1)}>
-                   Hey There, <br/> I'm cuijiawei.
+                <motion.span className={`primaryText ${css.hello}`} variants={fadeIn("right","tween",0.2,1)}>
+                   {t('hello')}
                 </motion.span>
-                <motion.span className="secondaryText" variants={fadeIn("left","tween",0.2,1)}>
-                    I design beautiful simple <br/> things, And I love what i do
+                <motion.span className={`secondaryText ${css.hello}`} variants={fadeIn("left","tween",0.2,1)}>
+                    {t('simpleThing')}
                 </motion.span>
             </div>
 
@@ -37,18 +39,18 @@ const hero = () => {
                     <div className="primaryText">6</div>
                     <div className="secondaryText">
                         <div>
-                            Years
+                            {t('year')}
                         </div>
                         <div>
-                            Experience
+                            {t('exper')}
                         </div>
                     </div>
                 </motion.div>
                 <motion.div variants={fadeIn("left","tween",0.5,1)}
                     className={css.certificate}>
                     <img src='./certificate.png' alt=''></img>
-                    <span>CERTIFIED PROFATIONAL</span>
-                    <span>UI/UX DESIGNER</span>
+                    <span className=''>{t('cert')}</span>
+                    <span className={css.profational}>{t('profational')}</span>
                 </motion.div>
             </div>
         </motion.div>

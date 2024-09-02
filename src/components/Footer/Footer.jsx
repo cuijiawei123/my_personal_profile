@@ -2,7 +2,10 @@ import React from "react";
 import { footerVariants, staggerChildren } from "../../utils/motion";
 import css from "./Footer.module.scss";
 import {motion} from 'framer-motion'
+import { useTranslation } from 'react-i18next';
+
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <motion.section
     variants={staggerChildren}
@@ -16,25 +19,24 @@ const Footer = () => {
       variants={footerVariants}
       className={`innerWidth yPaddings flexCenter ${css.container}`}>
         <div className={css.left}>
-          <span className="primaryText">
-            Let's make something <br />
-            amazing together.
+          <span className="primaryText preText">
+            {t('together')}
           </span>
           <span className="primaryText">
-            Start by <a href="mailto:cuij523@gmail.com">saying hi</a>
+            {t('startBy')} <a href="mailto:cuij523@gmail.com"> {t('resume')}</a>
           </span>
         </div>
 
         <div className={css.right}>
           <div className={css.info}>
-            <span className="secondaryText">Information</span>
-            <p>Chang'an District, Xi'an, China</p>
+            <span className="secondaryText">{t('Information')}</span>
+            <p>{t('district')}</p>
           </div>
           <ul className={css.menu}>
-            <li>Services</li>
-            <li>Works</li>
-            <li>Notes</li>
-            <li>Experience</li>
+            <li>{t('Services')}</li>
+            <li>{t('Works')}</li>
+            <li>{t('Notes')}</li>
+            <li>{t('Experience')}</li>
           </ul>
         </div>
       </motion.div>

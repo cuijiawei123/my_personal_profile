@@ -1,0 +1,97 @@
+{
+"projectExperience" :[
+  {
+    "name": "网站开发",
+    "projects": "50+",
+    "icon": "HiOutlineDesktopComputer",
+    "bg": "#286F6C"
+  },
+  {
+    "name": "后台开发",
+    "projects": "30+",
+    "icon": "CiMobile1",
+    "bg": "#EEC048"
+  },
+  {
+    "name": "需求设计",
+    "projects": "200+",
+    "icon": "MdWorkspacesOutline",
+    "bg": "#F26440"
+  }
+],
+"WhatDoIHelp":[
+  "使用专业的敏捷开发流程实现对需求的拆分细化，找到适合用户需求的技术栈及解决方案",
+  "像素级复现设计稿，在最大程度提高用户使用满意度的基础上体现设计美感"
+],
+"workExp": [
+  {
+    "place": "西安圆通信息科技",
+    "tenure": "2018年7月 - 2020年1月",
+    "role": "后台开发",
+    "detail":
+      "国内物流行业top企业，主要分为国内物流、海外物流、电商、金融四大领域，就职于国内产品开发部，参与内部申购平台、接口平台、网点管家、用户实名制等多个项目前后端的开发"
+  },
+  {
+    "place": "西安华为研究所",
+    "tenure": "2020年1月 - 2021年8月",
+    "role": "前端开发",
+    "detail":
+      "全球领先的信息与通信技术解决方案供应商，就职于全球运营商服务与软件研发部门，参与了CCA(用户投诉处理)、CCM(用户群障分析)、CCP(用户质差分析)等多个项目前端开发与维护"
+  },
+  {
+    "place": "西安新华三研究所",
+    "tenure": "2021年8月 - 2024年8月",
+    "role": "全栈开发",
+    "detail":
+      "国内数字化解决方案领导者，就职于云与智能产品部(workspace产品开发)，公有云/私有云、虚拟化/云桌面开发维护，workspace产品需求开发，现网问题定位"
+  }
+],
+"comments":[
+  {
+    "name": "李雷",
+    "post": "新华三-项目组长",
+    "comment":
+      "工作认真细致，有责任心，能够在完成分配开发任务的基础上协助同事及时响应处理现网问题，保障了workspace产品上云及国产化改造顺利进行",
+    "img": "./user-3.png"
+  },
+  {
+    "name": "张瑞",
+    "post": "华为-PL",
+    "comment":
+      "技术能力全面，能够胜任各类紧急分配的开发工作，支撑柬埔寨、俄罗斯现网问题响应及时，在全产品线UIUE改造、Flash过期改造、服务器降配的任务中表现突出",
+    "img": "./people1.png"
+  },
+  {
+    "name": "屈海龙",
+    "post": "圆通-部门经理",
+    "comment":
+      "以校招应届生的身份加入圆通，业务熟悉上手快，在开发周期紧张的情况下和其他同事紧密配合完成了紧急交付任务",
+    "img": "./people2.png"
+  }
+],
+  "name": "崔家巍",
+  "hello": "Hi，我是崔家巍",
+  "simpleThing": "追求高效、极简、极致 \n并热衷于此",
+  "year": "年",
+  "exper": "经验",
+  "cert": "专业技能",
+  "profational": "全栈开发",
+  "whatIdo": "我能做什么?",
+  "myExper": "工作经历",
+  "workExper":"项目经历",
+  "digitalExper":"数字化解决方案",
+  "moreWorks": "查看更多",
+  "peopleTalk": "同事评价",
+  "together":"期待有机会和您一起共事",
+  "resume": "下载简历",
+  "Information": "信息",
+  "district": "陕西省西安市长安区郭杜街道",
+  "Services": "介绍",
+  "Works": "工作经历",
+  "Notes": "笔记",
+  "Experience": "项目经历",
+  "Testimonials": "评价",
+  "projectsCompleted": "完成项目",
+  "happyClients": "用户满意",
+  "startBy": "开始于"
+}

@@ -5,8 +5,11 @@ import { motion } from "framer-motion";
 import { getMenuStyles, headerVariants } from "../../utils/motion";
 import useOutsideAlerter from "../../hooks/useOutsideAlerter";
 import useHeaderShadow from "../../hooks/useHeaderShadow";
+import { useTranslation } from 'react-i18next';
+import LanguageSwitch from '../../utils/switch'; // 引入Switch组件
 
 const Header = () => {
+  const { t } = useTranslation();
   const menuRef = useRef(null);
   const iconRef = useRef(null);
   const [menuOpened, setMenuOpened] = useState(false);
@@ -28,20 +31,23 @@ const Header = () => {
       viewport={{ once: true, amount: 0.25 }}
       style={{boxShadow: headerShadow}}
     >
-      <div className={`innerWidth ${css.container} flexCenter`}>
-        <div className={css.name}>Cuijiawei</div>
+      <div className={`innerWidth ${css.container} flexCenter `}>
+        <div className={css.name}><img className="iconImg" src='/vite.svg' alt=""></img> Cuijiawei</div>
         <ul
           className={`flexCenter ${css.menu}`}
           ref={menuRef}
           style={getMenuStyles(menuOpened)}
         >
-          <li><a href="#experties">Services</a></li>
-          <li><a href="#work">Experience</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#people">Testimonials</a></li>
+          <li><a href="#experties">{t('Services')}</a></li>
+          <li><a href="#work">{t('Works')}</a></li>
+          <li><a href="#portfolio">{t('Experience')}</a></li>
+          <li><a href="#people">{t('Testimonials')}</a></li>
           <li className={`flexCenter ${css.phone}`}>
             <p>+86  15091753891</p>
             <BiPhoneCall size={"40px"} />
+          </li>
+          <li>
+            <LanguageSwitch />
           </li>
         </ul>
 

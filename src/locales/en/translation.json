@@ -1,0 +1,101 @@
+{
+    "welcome": "Welcome to React",
+    "description": "This is a simple internationalized app.",
+    "headerTitle": "My Application",
+  "projectExperience" :[
+    {
+      "name": "Website Development",
+      "projects": "50+",
+      "icon": "HiOutlineDesktopComputer",
+      "bg": "#286F6C"
+    },
+    {
+      "name": "Backend development",
+      "projects": "30+",
+      "icon": "CiMobile1",
+      "bg": "#EEC048"
+    },
+    {
+      "name": "requirement design",
+      "projects": "200+",
+      "icon": "MdWorkspacesOutline",
+      "bg": "#F26440"
+    }
+  ],
+  "WhatDoIHelp":[
+    "I will help you with finging a solution and solve your problem, We use process design to create digital products. Besides that also help their business.",
+    "We use process design to create digital products. Besides that also help their business"
+  ],
+  "workExp": [
+    {
+      "place": "Xi'an YTO Information Technology Co., Ltd",
+      "tenure": "July 2018 - January 2020",
+      "role": "Backend development",
+      "detail":
+        "Engaged in Java development, using springboot for REST API development, and developed customer service management systems and express supply chain systems for the logistics industry"
+    },
+    {
+      "place": "Xi'an Huawei Research Institute",
+      "tenure": "January 2020 - Aug 2021",
+      "role": "Front-end Development",
+      "detail":
+        "Develop customer service system on operator BG, analyze user usage data for statistical reports and large screen displays, and provide real-time support to customer service personnel through intelligent fault analysis"
+    },
+    {
+      "place": "Xi'an Xinhuasan Technology Co., Ltd",
+      "tenure": "Aug 2021 - Aug 2024",
+      "role": "Full stack development",
+      "detail":
+        "Using JavaScript, Vue, React, NestJS for front-end and partial back-end development of virtualized desktops, managing strategies, users, and integrating with CMCC for public cloud desktop development"
+    }
+  ],
+  "comments":[
+    {
+      "name": "Thomas",
+      "post": "Development Team Leader",
+      "comment":
+        "He is conscientious and responsible in his work. He is able to assist colleagues in responding to and handling existing network issues in a timely manner on the basis of completing the assigned development tasks, ensuring the smooth implementation of the cloud migration and localization transformation of workspace products",
+      "img": "./user-3.png"
+    },
+    {
+      "name": "Jennifer",
+      "post": "Project Leader",
+      "comment":
+        "With comprehensive technical capabilities, he is competent for all kinds of emergency development work, supports timely response to existing network problems in Cambodia and Russia, and performs outstandingly in tasks such as UIUE transformation of the entire product line, Flash expiration transformation, and server downgrade.",
+      "img": "./people1.png"
+    },
+    {
+      "name": "Michael",
+      "post": "Development Team  Manager",
+      "comment":
+        "Joined YTO as a fresh graduate recruited from campus. Familiar with the business and quickly got started. In the tight development cycle, I worked closely with other colleagues to complete the urgent delivery task.",
+      "img": "./people2.png"
+    }
+  ],
+  "name": "Cuijiawei",
+  "hello": "Hey There, \n I'm cuijiawei",
+  "im": "I'm cuijiawei",
+  "simpleThing": "I design beautiful simple \n things, And I love what i do", 
+  "year": "Years",
+  "exper": "Experience",
+  "cert": "CERTIFIED PROFATIONAL",
+  "profational": "Full stack development",
+  "whatIdo": "What do I help? ",
+  "myExper": "My Work Experience",
+  "workExper":"My Latest Works",
+  "digitalExper":"Perfect solution for digital experience",
+  "moreWorks": "Explore More Works",
+  "peopleTalk": "People talk about us",
+  "together":" Let's make something \n amazing together.",
+  "Information": "Information",
+  "district": "Chang'an District, Xi'an, China",
+  "Services": "Services",
+  "Works": "Works",
+  "Notes": "Notes",
+  "Experience": "Experience",
+  "resume": "saying hi",
+  "startBy": "Start by",
+  "Testimonials": "Testimonials",
+  "projectsCompleted": "Projects Completed",
+  "happyClients": "Happy Clients"
+}

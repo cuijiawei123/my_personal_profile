@@ -10,6 +10,7 @@
             align-items: flex-start;
         }
         .left{
+            white-space: pre-line;
             flex: 3;
             >*{
                 display: block;
@@ -29,7 +30,7 @@
         .right{
             flex: 1;
             .info{
-                margin-bottom: 1rem;
+                margin-bottom: 2rem;
                 >*{
                     display: block;
                 }

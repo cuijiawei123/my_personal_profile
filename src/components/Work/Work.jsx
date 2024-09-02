@@ -3,7 +3,10 @@ import { workExp } from "../../utils/data";
 import css from "./Work.module.scss";
 import {motion} from 'framer-motion'
 import { fadeIn, staggerChildren, textVariant2, zoomIn } from "../../utils/motion";
+import { useTranslation } from 'react-i18next';
+
 const Work = () => {
+  const { t } = useTranslation();
   return (
     <motion.section 
     variants={staggerChildren}
@@ -15,10 +18,10 @@ const Work = () => {
 
       <div className={`innerWidth flexCenter ${css.container}`}>
         {/* heading */}
-        <span className="primaryText yPaddings">My Work Experience</span>
+        <span className="primaryText yPaddings">{t('myExper')}</span>
 
         <div className={`flexCenter ${css.experiences}`}>
-          {workExp.map((exp, i) => {
+          {t('workExp', { returnObjects: true }).map((exp, i) => {
             return (
               <motion.div variants={textVariant2} key={i} className={`flexCenter ${css.exp}`}>
                 <div className={css.post}>

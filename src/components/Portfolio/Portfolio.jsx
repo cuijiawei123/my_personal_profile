@@ -2,7 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import css from "./Portfolio.module.scss";
 import { fadeIn, staggerChildren, textVariant, textVariant2 } from "../../utils/motion";
+import { useTranslation } from 'react-i18next';
+
 const Portfolio = () => {
+  const { t } = useTranslation();
   return (
     <motion.section
     variants={staggerChildren}
@@ -18,10 +21,10 @@ const Portfolio = () => {
 
         <motion.div variants={textVariant(.4)} className={`flexCenter ${css.heading}`}>
           <div>
-            <span className="primaryText">My Latest Works</span>
-            <p style={{marginTop: "10px"}}>Perfect solution for digital experience</p>
+            <span className="primaryText">{t('workExper')}</span>
+            <p style={{marginTop: "10px"}}>{t('digitalExper')}</p>
           </div>
-          <span className="secondaryText">Explore More Works</span>
+          <span className="secondaryText">{t('moreWorks')}</span>
         </motion.div>
 
 

@@ -3,8 +3,10 @@ import css from './Experties.module.scss'
 import {projectExperience, WhatDoIHelp} from '../../utils/data'
 import {fadeIn, staggerContainer} from '../../utils/motion'
 import {motion} from 'framer-motion'
+import { useTranslation } from 'react-i18next';
 
 const Experties = () => {
+  const { t } = useTranslation();
   return (
     <motion.section 
         variants={staggerContainer}  
@@ -15,7 +17,7 @@ const Experties = () => {
         <div className={`paddings yPaddings flexCenter innerWidth ${css.container}`}>
             <div className={css.leftSide}>
                 {
-                    projectExperience.map((exp, i)=> {
+                    t('projectExperience', { returnObjects: true }).map((exp, i)=> {
                         return <motion.div 
                             variants={fadeIn("right","tween",(i+1)*0.2,1)}
                             className={css.exp} key={i}>
@@ -31,20 +33,20 @@ const Experties = () => {
                 }
             </div>
             <div className={css.rightSide}>
-                <span className='primaryText'>What do I help? </span>
+                <span className='primaryText'>{t('whatIdo')}</span>
                 {
-                    WhatDoIHelp.map((paragraph,i)=> {
+                    t('WhatDoIHelp', { returnObjects: true }).map((paragraph,i)=> {
                         return <span className='secondaryText' key={i}>{paragraph}</span>
                     })
                 }
                 <div className={`flexCenter ${css.stats}`}>
                     <div className={`flexCenter ${css.stat}`}>
                         <span className='primaryText'>285+</span>
-                        <span className='secondaryText' >Projects Completed</span>
+                        <span className='secondaryText' >{t('projectsCompleted')}</span>
                     </div>
                     <div className={`flexCenter ${css.stat}`}>
-                        <span className='primaryText'>190+</span>
-                        <span className='secondaryText'>Happy Clients</span>
+                        <span className='primaryText'>1200+</span>
+                        <span className='secondaryText'>{t('happyClients')}</span>
                     </div>
                 </div>
             </div>

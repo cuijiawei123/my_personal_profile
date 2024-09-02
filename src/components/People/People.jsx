@@ -4,8 +4,10 @@ import css from "./People.module.scss";
 import Slider from "react-slick";
 import {motion} from 'framer-motion'
 import { footerVariants, staggerChildren, textVariant, textVariant2 } from "../../utils/motion";
+import { useTranslation } from 'react-i18next';
 
 const People = () => {
+  const { t } = useTranslation();
   return (
     <motion.section
     variants={staggerChildren}
@@ -22,11 +24,11 @@ const People = () => {
 
 
         <div className={`flexCenter ${css.heading}`}>
-          <span className="primaryText">People talk about us</span>
-          <p style={{ marginTop: "2rem" }}>
+          <span className="primaryText">{t('peopleTalk')}</span>
+          {/* <p style={{ marginTop: "2rem" }}>
             I got a job that was in accordance with the salary and field of work
           </p>
-          <p>The process of submitting an appilication was quite cosy</p>
+          <p>The process of submitting an appilication was quite cosy</p> */}
         </div>
 
 
@@ -34,7 +36,7 @@ const People = () => {
         <div className={`yPaddings ${css.comments}`}>
           {/* to use slider , we have to inlcude css in index.html head */}
           <Slider {...sliderSettings} className={css.slider}>
-            {comments.map((comment, i) => {
+            {t('comments', { returnObjects: true }).map((comment, i) => {
               return (
                 <div className={`flexCenter ${css.comment}`} key={i}>
                   <img src={comment.img} alt="" />
